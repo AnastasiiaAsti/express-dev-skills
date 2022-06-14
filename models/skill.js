@@ -24,11 +24,12 @@ const skills = [
     { id: 23, skill: 'High stress tolerance', advanced: true },
     { id: 24, skill: 'Detail oriented', advanced: true },
     { id: 25, skill: 'Logical approach', advanced: true },
-    { id: 26, skill: 'Project management skills', advanced: true },
+    { id: 26, skill: 'Project management skills', advanced: true }
 ];
 
 module.exports = {
-    getAll
+    getAll,
+    getOne
 };
 
 function getAll() {
