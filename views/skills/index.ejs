@@ -11,11 +11,13 @@
     <ul>
         <% skills.forEach(function(skill) { %>
         <li>
+            <a href="/skills/<%= skills.id %>"><%= skills.skill %></a>
             <%= skill.skill %>
             - 
             <%= skill.advanced ? 'advanced' : 'intermediate' %>
         </li>
         <% }); %>
     </ul>
+    <a href="/">Developer Skills</a>
 </body>
 </html>

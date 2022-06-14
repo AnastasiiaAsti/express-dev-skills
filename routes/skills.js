@@ -6,8 +6,9 @@ const skillsCtrl = require('../controllers/skills');
 
 
  // All actual paths start with "/todos"
-
-  // GET /skills
+//index route
 router.get('/', skillsCtrl.index);
+//show route
+router.get('/:id', skillsCtrl.show)
   
 module.exports = router;
