@@ -33,4 +33,4 @@ module.exports = {
 
 function getAll() {
     return skills;
-}
+};
