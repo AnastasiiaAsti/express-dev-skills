@@ -10,5 +10,5 @@ const skillsCtrl = require('../controllers/skills');
 router.get('/', skillsCtrl.index);
 //show route
 router.get('/:id', skillsCtrl.show)
-  
+
 module.exports = router;
