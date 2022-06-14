@@ -1,7 +1,7 @@
 // controllers/todos.js
 
 // Should name the model in uppercase and singular
-const Skills = require('../models/skill');
+const Skill = require('../models/skill');
 
 module.exports = {
     index
