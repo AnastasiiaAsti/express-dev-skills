@@ -19,6 +19,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//custom middleware
+app.use(function(req, res, next) {
+  // Add a time property to the res.locals object
+  // The time property will then be accessible when rendering a view
+  res.locals.time = new Date().toLocaleDateString();
+  next();
+});
+
 //mounts route middleware
 app.use('/', indexRouter);
 app.use('/skills', skillsRouter);
