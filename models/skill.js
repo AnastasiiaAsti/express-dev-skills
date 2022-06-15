@@ -30,7 +30,8 @@ const skills = [
 module.exports = {
     getAll,
     getOne,
-    create
+    create,
+    deleteOne
 };
 
 function getAll() {
@@ -48,4 +49,14 @@ function create(skill) {
     // New todos wouldn't be done :)
     skill.advanced = false;
     skills.push(skill);
+}
+
+
+function deleteOne(id) {
+    //all properties attached to req.params are strings
+    id = parseInt(id);
+    //find idx number based on the id of the todo object
+    const idx = skills.findIndex(skill => skill.id === id);
+    //start at idx, deleteCount - 1
+    skills.splice(idx, 1);
 }
