@@ -15,6 +15,10 @@
             <%= skill.skill%>
             - 
             <%= skill.advanced ? 'advanced' : 'intermediate' %>
+            <form action="/skills/<%= skill.id %>?_method=DELETE"
+                class="delete-form" method="POST">
+                <button type="submit">X</button>
+            </form>
         </li>
         <% }); %>
     </ul>
