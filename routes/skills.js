@@ -13,5 +13,8 @@ router.get('/', skillsCtrl.index);
 router.get('/new', skillsCtrl.new)
 //show route
 router.get('/:id', skillsCtrl.show)
+//create route
+//position does NOT matter
+router.post('/', skillsCtrl.create)
 
 module.exports = router;
