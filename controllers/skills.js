@@ -9,7 +9,8 @@ module.exports = {
     new: newSkill,
     create,
     delete: deleteSkill,
-    edit
+    edit,
+    update
 };
 
 function index(req, res) {
