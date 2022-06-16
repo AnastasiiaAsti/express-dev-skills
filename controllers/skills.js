@@ -45,3 +45,8 @@ function edit(req, res) {
         skill: Skill.getOne(req.params.id)
     });
 }
+
+function update(req, res) {
+    Skill.update(req.params.id, req.body)
+    res.redirect('/skills')
+}
