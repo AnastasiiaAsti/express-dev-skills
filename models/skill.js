@@ -1,30 +1,30 @@
 const skills = [
-    { id: 1, skill: 'HTML5', advanced: true },
-    { id: 2, skill: 'CSS', advanced: true },
-    { id: 3, skill: 'JavaScript', advanced: true },
-    { id: 4, skill: 'JavaScript Libraries', advanced: true },
-    { id: 5, skill: 'Bootstrap', advanced: true },
-    { id: 6, skill: 'Node JS', advanced: true },
-    { id: 7, skill: 'Express', advanced: true },
-    { id: 8, skill: 'MERN Stack', advanced: true },
-    { id: 9, skill: 'JQuery', advanced: true },
-    { id: 10, skill: 'Python', advanced: false },
-    { id: 11, skill: 'Database knowledge', advanced: true },
-    { id: 12, skill: 'Data structures and algorithms', advanced: true },
-    { id: 13, skill: 'Source control', advanced: false },
-    { id: 14, skill: 'Testing procedures', advanced: true },
-    { id: 15, skill: 'Debugging knowledge', advanced: true },
-    { id: 16, skill: 'Operating systems', advanced: true },
-    { id: 17, skill: 'Text editing software', advanced: true },
-    { id: 18, skill: 'Cryptography', advanced: false },
-    { id: 19, skill: 'Software frameworks', advanced: true },
-    { id: 20, skill: 'Cloud platforms', advanced: false },
-    { id: 21, skill: 'Spreadsheet software', advanced: true },
-    { id: 22, skill: 'Responsive Web Design', advanced: true },
-    { id: 23, skill: 'High stress tolerance', advanced: true },
-    { id: 24, skill: 'Detail oriented', advanced: true },
-    { id: 25, skill: 'Logical approach', advanced: true },
-    { id: 26, skill: 'Project management skills', advanced: true }
+    { id: 1, skill: 'HTML5', level: 'advanced' },
+    { id: 2, skill: 'CSS', level: 'advanced' },
+    { id: 3, skill: 'JavaScript', level: 'advanced' },
+    { id: 4, skill: 'JavaScript Libraries', level: 'advanced' },
+    { id: 5, skill: 'Bootstrap', level: 'advanced' },
+    { id: 6, skill: 'Node JS', level: 'advanced' },
+    { id: 7, skill: 'Express', level: 'advanced' },
+    { id: 8, skill: 'MERN Stack', level: 'advanced'},
+    { id: 9, skill: 'JQuery', level: 'advanced' },
+    { id: 10, skill: 'Python', level: 'intermediate' },
+    { id: 11, skill: 'Database knowledge', level: 'advanced' },
+    { id: 12, skill: 'Data structures and algorithms', level: 'advanced' },
+    { id: 13, skill: 'Source control', level: 'intermediate' },
+    { id: 14, skill: 'Testing procedures', level: 'advanced' },
+    { id: 15, skill: 'Debugging knowledge', level: 'advanced' },
+    { id: 16, skill: 'Operating systems', level: 'advanced' },
+    { id: 17, skill: 'Text editing software', level: 'advanced' },
+    { id: 18, skill: 'Cryptography', level: 'advanced' },
+    { id: 19, skill: 'Software frameworks', level: 'advanced' },
+    { id: 20, skill: 'Cloud platforms', level: 'intermediate' },
+    { id: 21, skill: 'Spreadsheet software', level: 'advanced'},
+    { id: 22, skill: 'Responsive Web Design', level: 'advanced' },
+    { id: 23, skill: 'High stress tolerance', level: 'advanced' },
+    { id: 24, skill: 'Detail oriented', level: 'advanced' },
+    { id: 25, skill: 'Logical approach', level: 'advanced' },
+    { id: 26, skill: 'Project management skills', level: 'advanced' }
 ];
 
 module.exports = {
@@ -66,4 +66,5 @@ function update(editContent, id) {
     id = parseInt(id)
     const skillUpdate = skills.find(skill => skill.id === id)
     skillUpdate.skill = editContent.skill
+    skillUpdate.level = editContent.level
 }

@@ -16,7 +16,8 @@
                 class="delete-form" method="POST">
                 <button id="delete" type="submit">X</button>
             </form>
-            <a href="/skills/<%= skill.id %>"><%= skill.skill %></a>
+            <a href="/skills/<%= skill.id %>"><%= skill.skill %></a> -
+            <%= skill.level %>
         </li>
         <% }); %>
     </ul>

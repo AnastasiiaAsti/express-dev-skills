@@ -20,7 +20,8 @@ function update(req, res) {
 
 function edit(req, res) {
     res.render('skills/edit', {
-        skill: Skill.getOne(req.params.id)
+        skill: Skill.getOne(req.params.id),
+        level: Skill.getOne(req.params.id)
     });
 }
 
