@@ -31,7 +31,8 @@ module.exports = {
     getAll,
     getOne,
     create,
-    deleteOne
+    deleteOne,
+    update
 };
 
 function getAll() {
@@ -59,4 +60,10 @@ function deleteOne(id) {
     const idx = skills.findIndex(skill => skill.id === id);
     //start at idx, deleteCount - 1
     skills.splice(idx, 1);
+}
+
+function update(editContent, id) {
+    id = parseInt(id)
+    const skillUpdate = skills.find(skill => skill.id === id)
+    skillUpdate.skill = editContent.skill
 }
