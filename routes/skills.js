@@ -20,5 +20,7 @@ router.post('/', skillsCtrl.create)
 router.delete('/:id', skillsCtrl.delete);
 //edit route
 router.get('/:id/edit', skillsCtrl.edit);
+//update route
+router.put('/:id', todosCtrl.update)
 
 module.exports = router;
