@@ -8,7 +8,7 @@
 <body>
     <h1>New Skill</h1>
     <form action="/skills/<%= skill.id %>?_method=PUT" method="POST" autocomplete="off">
-        <input type="text" name="todo" value="<%= skill.skill %>">
+        <input type="text" name="skill" value="<%= skill.skill %>">
         <button type="submit">Update skill</button>
     </form>
     </body>
