@@ -1,3 +1,3 @@
-# my-dev-skills
+# express-dev-skills
 
 Main technology: Express, Node JS
